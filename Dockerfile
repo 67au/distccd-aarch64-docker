@@ -5,4 +5,4 @@ RUN set -ex \
 
 EXPOSE 3636/tcp
 
-ENTRYPOINT ["/usr/bin/distccd", "--verbose", "--log-stderr", "--daemon", "--no-detach", "--allow", "0.0.0.0/0"]
+CMD ["/usr/bin/distccd", "--verbose", "--log-stderr", "--daemon", "--no-detach", "--allow", "0.0.0.0/0"]
