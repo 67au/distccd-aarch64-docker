@@ -2,7 +2,7 @@ name: Build and Push Docker Images
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: distccd-aarch64
+  IMAGE_NAME: 67au/distccd-aarch64
 
 on:
   workflow_dispatch:
