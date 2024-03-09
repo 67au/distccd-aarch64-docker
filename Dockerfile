@@ -6,4 +6,6 @@ RUN echo "/usr/lib/ccache/bin/g++\n/usr/lib/ccache/bin/gcc\n/usr/lib/ccache/bin/
 
 EXPOSE 3632/tcp
 
-CMD ["CMD_LIST=/CMD_LIST", "/usr/bin/distccd", "--verbose", "--log-stderr", "--daemon", "--no-detach", "--allow", "0.0.0.0/0"]
+ENV CMD_LIST=/CMD_LIST
+
+CMD ["/usr/bin/distccd", "--verbose", "--log-stderr", "--daemon", "--no-detach", "--allow", "0.0.0.0/0"]
